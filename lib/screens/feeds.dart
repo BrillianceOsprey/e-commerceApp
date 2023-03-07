@@ -8,6 +8,17 @@ class Feeds extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Feeds Screens'),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+              gradient: LinearGradient(colors: [
+            Colors.pink,
+            Colors.purple,
+          ])),
+        ),
+        centerTitle: true,
+      ),
       body:
           //     StaggeredGridView.countBuilder(
           //   crossAxisCount: 6,

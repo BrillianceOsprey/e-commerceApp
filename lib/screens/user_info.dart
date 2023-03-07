@@ -28,6 +28,9 @@ class _UserInfoState extends State<UserInfo> {
   Widget build(BuildContext context) {
     final themeChange = Provider.of<DarkThemeProvider>(context);
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 0,
+      ),
       body: Stack(
         children: [
           CustomScrollView(
