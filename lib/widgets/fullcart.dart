@@ -28,7 +28,7 @@ class _CartFullState extends State<CartFull> {
               image: DecorationImage(
                   image: NetworkImage(
                     // 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4PdHtXka2-bDDww6Nuect3Mt9IwpE4v4HNw&usqp=CAU'
-                    'https://cdn.shopify.com/s/files/1/0394/1066/3591/products/BQ1703_main_1024x1024@2x.jpg?v=1609991286',
+                    'https://cdn.shopify.com/static/sample-images/garnished.jpeg?v=1609991286',
                   ),
                   fit: BoxFit.fill),
             ),

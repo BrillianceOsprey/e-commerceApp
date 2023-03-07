@@ -5,7 +5,7 @@ import 'package:baby_boss/screens/home.dart';
 import 'package:baby_boss/screens/search.dart';
 import 'package:baby_boss/screens/user_info.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+// import 'package:flutter_icons/flutter_icons.dart';
 
 class BottomBarScreen extends StatefulWidget {
   @override
@@ -68,16 +68,17 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             child: BottomNavigationBar(
               onTap: _selectPage,
               backgroundColor: Theme.of(context).primaryColor,
-              unselectedItemColor: Theme.of(context).textSelectionColor,
+              // unselectedItemColor: Theme.of(context).textSelectionColor,
+              unselectedItemColor: Colors.black,
               selectedItemColor: Colors.purple,
               currentIndex: _selectedPageIndex,
               items: [
                 BottomNavigationBarItem(
-                  icon: Icon(Ionicons.md_home),
+                  icon: Icon(Icons.home),
                   label: 'Home',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Ionicons.logo_rss),
+                  icon: Icon(Icons.rss_feed),
                   label: 'Feeds',
                   // backgroundColor: Colors.red,
                 ),
@@ -89,12 +90,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
-                    Ionicons.md_cart,
+                    Icons.card_giftcard,
                   ),
                   label: 'Cart',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Feather.user),
+                  icon: Icon(Icons.person),
                   label: 'User',
                 ),
               ],
@@ -111,7 +112,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           splashColor: Colors.grey,
           tooltip: 'Search',
           elevation: 4,
-          child: Icon(Ionicons.md_search),
+          child: Icon(Icons.search),
           onPressed: () => setState(() {
             _selectedPageIndex = 2;
           }),

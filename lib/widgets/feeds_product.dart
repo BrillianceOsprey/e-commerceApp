@@ -1,4 +1,4 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 
 class FeedProducts extends StatefulWidget {
@@ -37,15 +37,27 @@ class _FeedState extends State<FeedProducts> {
                     ),
                   ),
                 ),
-                Badge(
-                  toAnimate: true,
-                  shape: BadgeShape.square,
-                  badgeColor: Colors.pink,
-                  borderRadius:
-                      BorderRadius.only(bottomRight: Radius.circular(8)),
-                  badgeContent:
-                      Text('New', style: TextStyle(color: Colors.white)),
-                ),
+                // Badge(
+                //   toAnimate: true,
+                //   shape: BadgeShape.square,
+                //   badgeColor: Colors.pink,
+                //   borderRadius:
+                //       BorderRadius.only(bottomRight: Radius.circular(8)),
+                //   badgeContent:
+                //       Text('New', style: TextStyle(color: Colors.white)),
+                // ),
+                // badges.Badge(
+                //   child: Container(
+                //     height: 50,
+                //     width: 50,
+                //   ),
+                //   badgeContent: Text(
+                //     'New',
+                //     style: TextStyle(
+                //       color: Colors.white,
+                //     ),
+                //   ),
+                // )
               ],
             ),
             Container(

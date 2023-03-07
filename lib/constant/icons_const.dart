@@ -1,12 +1,12 @@
 // @dart=2.9
-import 'package:flutter/cupertino.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+
+import 'package:flutter/material.dart';
 
 class MyIcons {
-  static IconData home = Feather.home;
-  static IconData rss = Feather.rss;
-  static IconData search = Feather.search;
-  static IconData user = Feather.user;
-  static IconData cart = Feather.shopping_cart;
-  static IconData trash = Feather.trash;
+  static IconData home = Icons.home;
+  static IconData rss = Icons.rss_feed;
+  static IconData search = Icons.search;
+  static IconData user = Icons.person;
+  static IconData cart = Icons.shopping_cart;
+  static IconData trash = Icons.delete_forever;
 }

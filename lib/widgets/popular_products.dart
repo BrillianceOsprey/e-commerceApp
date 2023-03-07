@@ -19,12 +19,13 @@ class PopularProducts extends StatelessWidget {
         child: Material(
           color: Colors.transparent,
           child: InkWell(
-           borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(
-              10.0,
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(
+                10.0,
+              ),
+              bottomRight: Radius.circular(10.0),
             ),
-            bottomRight: Radius.circular(10.0),),
-            onTap: (){},
+            onTap: () {},
             child: Column(
               children: [
                 Stack(
@@ -62,8 +63,8 @@ class PopularProducts extends StatelessWidget {
                         child: Text(
                           '\$ 12.2',
                           style: TextStyle(
-                            color: Theme.of(context).textSelectionColor,
-                          ),
+                              // color: Theme.of(context).textSelectionColor,
+                              ),
                         ),
                       ),
                     )
@@ -77,10 +78,11 @@ class PopularProducts extends StatelessWidget {
                       Text(
                         'Title',
                         maxLines: 1,
-                        style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.bold),
                       ),
                       Row(
-                     //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
                             'Description',

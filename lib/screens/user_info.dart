@@ -2,7 +2,7 @@
 import 'package:baby_boss/constant/colors.dart';
 import 'package:baby_boss/provider/darttheme_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+// import 'package:flutter_icons/flutter_icons.dart';
 import 'package:list_tile_switch/list_tile_switch.dart';
 import 'package:provider/provider.dart';
 
@@ -139,7 +139,7 @@ class _UserInfoState extends State<UserInfo> {
                     ),
                     ListTileSwitch(
                       value: themeChange.darkTheme,
-                      leading: Icon(Ionicons.md_moon),
+                      leading: Icon(Icons.macro_off),
                       onChanged: (value) {
                         setState(() {
                           themeChange.darkTheme = value;
